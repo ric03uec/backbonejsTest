@@ -22,7 +22,7 @@ var initView = function(){
   var Appview = Backbone.View.extend({
     el : $('#add-friends'),
     initialize : function(){
-      this.friends = new Friends(null, {view : this});
+      this.friends = new Friends({view : this});
     },
     events : {
       //add the click handler on the button to trigger an action
